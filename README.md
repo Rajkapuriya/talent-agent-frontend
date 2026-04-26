@@ -2,6 +2,10 @@
 
 Frontend application for the Talent Agent platform, built with React + Vite.
 
+## Architecture Diagram
+
+![MERN Fullstack Architecture](./mern_fullstack_architecture.svg)
+
 ## Tech Stack
 
 - React 18
