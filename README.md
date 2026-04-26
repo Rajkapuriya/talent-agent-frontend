@@ -93,11 +93,7 @@ Tests:
 npm run test
 ```
 
-## Auth Handling
 
-- JWT token is stored in localStorage via Zustand persisted store.
-- Axios request interceptor attaches `Authorization: Bearer <token>`.
-- On `401`, client clears auth storage and redirects to `/login`.
 
 ## Pipeline Progress (SSE)
 
@@ -114,12 +110,6 @@ The UI updates stage states for:
 - ranking
 - complete
 
-## Common Issues
-
-- **API not reachable**
-  - Verify `VITE_API_URL` and backend server status.
-- **CORS blocked**
-  - Ensure your frontend origin is allowed by backend CORS config in `server/src/app.js`.
 - **Login loop / forced logout**
   - Usually caused by expired/invalid token and expected 401 redirect behavior.
 
